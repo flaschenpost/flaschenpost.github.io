@@ -21,7 +21,7 @@ class ListExtension {
                       "eventType": {
                         "type": "number",
                         "defaultValue": "1",
-                        "menu": "pressReleaseMenu"
+                        "menu": "lists"
                       },
                     }
                 },
@@ -41,7 +41,7 @@ class ListExtension {
                       "eventType": {
                         "type": "number",
                         "defaultValue": "1",
-                        "menu": "pressReleaseMenu"
+                        "menu": "lists"
                       },
                     }
                 }
