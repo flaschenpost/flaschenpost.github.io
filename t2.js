@@ -47,7 +47,7 @@ class ListExtension {
                 }
             ],
             "menus": {
-                "lists": [
+                "listMenu": [
                   {"text":"acceptReporters": value: false},{"text": "items": value:'getAllLists'}
                 ]
             }
