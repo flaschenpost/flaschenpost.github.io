@@ -1,4 +1,4 @@
-class ScratchStateSaver {
+class ScratchSimpleGamepad {
     constructor(runtime) {
         this.runtime = runtime
         this.currentMSecs = -1
@@ -77,7 +77,7 @@ class ScratchStateSaver {
 }
 
 (function() {
-    var extensionInstance = new ScratchStateSaver(window.vm.extensionManager.runtime)
+    var extensionInstance = new ScratchSimpleGamepad(window.vm.extensionManager.runtime)
     var serviceName = window.vm.extensionManager._registerInternalExtension(extensionInstance)
     window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName)
 })()
