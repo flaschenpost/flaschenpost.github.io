@@ -1,4 +1,4 @@
-class GameStatusSaver {
+class ScratchSimpleGamepad {
     constructor(runtime) {
         this.runtime = runtime
         this.currentMSecs = -1
@@ -8,10 +8,10 @@ class GameStatusSaver {
     
     getInfo() {
         return {
-            "id": "SaveStatus",
-            "name": "SaveStatus",
+            "id": "SimpleGamepad",
+            "name": "SimpleGamepad",
             "blocks": [{
-                        "opcode": "saveStatus",
+                        "opcode": "buttonPressedReleased",
                         "blockType": "hat",
                         "text": "button [b] [eventType]",
                         "arguments": {
@@ -58,7 +58,7 @@ class GameStatusSaver {
             this.currentButtons.push(gamepad.buttons[i].pressed)
     }
     
-    saveStatus({b,eventType}) {
+    buttonPressedReleased({b,eventType}) {
         this.update()
         if (b < this.currentButtons.length) {
             if (eventType == 1) { // note: this will be a string, so better to compare it to 1 than to treat it as a Boolean
@@ -77,7 +77,7 @@ class GameStatusSaver {
 }
 
 (function() {
-    var extensionInstance = new GameStatusSaver(window.vm.extensionManager.runtime)
+    var extensionInstance = new ScratchSimpleGamepad(window.vm.extensionManager.runtime)
     var serviceName = window.vm.extensionManager._registerInternalExtension(extensionInstance)
     window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName)
 })()
