@@ -16,12 +16,12 @@ class ListExtension {
                     "arguments": {
                         "LIST": {
                             "type": 'string',
-                            "menu": 'lists'
+                            "menu": 'listMenu'
                         },
                       "eventType": {
                         "type": "number",
                         "defaultValue": "1",
-                        "menu": "lists"
+                        "menu": "listMenu"
                       },
                     }
                 },
@@ -32,7 +32,7 @@ class ListExtension {
                     "arguments": {
                         "LIST": {
                             "type": 'string',
-                            "menu": 'lists'
+                            "menu": 'listMenu'
                         },
                         "VALUES": {
                             "type": 'string',
@@ -41,7 +41,7 @@ class ListExtension {
                       "eventType": {
                         "type": "number",
                         "defaultValue": "1",
-                        "menu": "lists"
+                        "menu": "listMenu"
                       },
                     }
                 }
