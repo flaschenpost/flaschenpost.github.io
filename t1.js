@@ -8,8 +8,8 @@ class ScratchSimpleGamepad {
     
     getInfo() {
         return {
-            "id": "SimpleGamepad",
-            "name": "SimpleGamepad",
+            "id": "StateSaver",
+            "name": "StateSaver",
             "blocks": [{
                         "opcode": "buttonPressedReleased",
                         "blockType": "hat",
