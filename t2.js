@@ -6,40 +6,40 @@ class ListExtension {
 
     getInfo() {
         return {
-            id: 'listoperations',
-            name: 'List Operations',
-            blocks: [
+            "id": 'listoperations',
+            "name": 'List Operations',
+            "blocks": [
                 {
-                    opcode: 'readList',
-                    blockType: 'reporter',
-                    text: 'read all items from list [LIST]',
-                    arguments: {
-                        LIST: {
-                            type: 'string',
-                            menu: 'lists'
+                    "opcode": 'readList',
+                    "blockType": 'reporter',
+                    "text": 'read all items from list [LIST]',
+                    "arguments": {
+                        "LIST": {
+                            "type": 'string',
+                            "menu": 'lists'
                         }
                     }
                 },
                 {
-                    opcode: 'writeToList',
-                    blockType: 'command',
-                    text: 'write values [VALUES] to list [LIST]',
-                    arguments: {
-                        LIST: {
-                            type: 'string',
-                            menu: 'lists'
+                    "opcode": 'writeToList',
+                    "blockType": 'command',
+                    "text": 'write values [VALUES] to list [LIST]',
+                    "arguments": {
+                        "LIST": {
+                            "type": 'string',
+                            "menu": 'lists'
                         },
-                        VALUES: {
-                            type: 'string',
-                            defaultValue: '1,2,3'
+                        "VALUES": {
+                            "type": 'string',
+                            "defaultValue": '1,2,3'
                         }
                     }
                 }
             ],
-            menus: {
-                lists: {
-                    acceptReporters: false,
-                    items: 'getAllLists'
+            "menus": {
+                "lists": {
+                    "acceptReporters": false,
+                    "items": 'getAllLists'
                 }
             }
         };
