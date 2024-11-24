@@ -25,12 +25,31 @@ class ListExtension {
                       },
                     }
                 },
+                {
+                    "opcode": 'writeToList',
+                    "blockType": 'command',
+                    "text": 'write values [VALUES] to list [LIST]',
+                    "arguments": {
+                        "LIST": {
+                            "type": 'string',
+                            "menu": 'lists'
+                        },
+                        "VALUES": {
+                            "type": 'string',
+                            "defaultValue": '1,2,3'
+                        },
+                      "eventType": {
+                        "type": "number",
+                        "defaultValue": "1",
+                        "menu": "pressReleaseMenu"
+                      },
+                    }
+                }
             ],
             "menus": {
-                "lists": {
-                    "acceptReporters": false,
-                    "items": 'getAllLists'
-                }
+                "lists": [
+                  {"text":"acceptReporters": value: false},{"text": "items": value:'getAllLists'}
+                ]
             }
         };
     }
