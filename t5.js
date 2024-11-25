@@ -25,7 +25,6 @@ class SimpleExtension {
         const prefix = args.TEXT;
         console.log(prefix, "Starting variable dump");
         
-/*
         // Get all targets (sprites + stage)
         const targets = vm.runtime.targets;
         
@@ -37,7 +36,6 @@ class SimpleExtension {
                 console.log(prefix, variable.name, "=", variable.value);
             });
         });
-*/
     }
 }
 
