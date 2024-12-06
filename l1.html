@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/h5p-standalone@1.3.0/dist/main.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/h5p-standalone@1.3.0/dist/styles/h5p.css">
+</head>
+<body>
+    <div id="h5p-container"></div>
+    <script>
+        new H5PStandalone.H5P(document.getElementById('h5p-container'), {
+            frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@1.3.0/dist/styles/h5p-frame.css',
+            content: 'path/to/your/h5p/content.h5p'
+        });
+    </script>
+</body>
+</html>

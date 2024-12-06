@@ -1,5 +1,6 @@
 class SimpleExtension {
-    constructor(){
+    constructor(runtime){
+      this.runtime=runtime;
     }
     getInfo() {
         return {
@@ -26,7 +27,7 @@ class SimpleExtension {
         console.log(prefix, "Starting variable dump");
         
         // Get all targets (sprites + stage)
-        const targets = window.vm.runtime.targets;
+        const targets = this.runtime.targets;
         
         // For each target, log its variables
         targets.forEach(target => {
